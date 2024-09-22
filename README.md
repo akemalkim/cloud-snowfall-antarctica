@@ -44,9 +44,6 @@ Our analysis yielded several key findings:
 <img src="snow_accum_under_synotic_type.png" alt="Snow Accumulation Patterns" width="600"/>
 
 ## Methodology
-The analysis was conducted using a combination of lidar and radar datasets collected from Sott Base, Antarctica. The following steps summarize the general approach:
-
-## Methodology
 The analysis was conducted using a combination of lidar and radar datasets collected from various locations in Antarctica. The following steps summarize the general approach:
 
 ## Methodology

@@ -7,16 +7,39 @@ This project investigates cloud formation and snowfall patterns in Antarctica us
 Our analysis yielded several key findings:
 
 1. **Lidar Climatology:** Analysis of lidar data provided insights into the vertical distribution of clouds, revealing significant variations in cloud height and thickness over different seasons.
-   <img src="path/to/lidar_climatology.png" alt="Lidar Climatology" width="600"/>  <!-- Update with your actual figure path -->
+
+- Attenuated volume backscatter profile
+
+<img src="time_altitude_backscatter_10032022.png" alt="Lidar Climatology" width="600"/>  <!-- Update with your actual figure path -->
+
+- Observational Cloud Occurrence in 2022
+<img src="cl_occur_obs.png" alt="Lidar Climatology" width="600"/>
+
+- MERRA2 Cloud Occurrence in 2022
+<img src="cl_occ_merra2.png" alt="Lidar Climatology" width="600"/>
+
 
 2. **Radar Climatology:** Radar data helped quantify precipitation rates, indicating how snowfall varies spatially and temporally across the Antarctic landscape.
-   <img src="path/to/radar_climatology.png" alt="Radar Climatology" width="600"/>  <!-- Update with your actual figure path -->
+
+- Radar reflectivity, Doppler velocity, spectral width and snow rate
+<img src="MRR2_raw_analysis4-7.png" alt="Radar Climatology" width="600"/>  <!-- Update with your actual figure path -->
+
 
 3. **Snow Accumulation:** The study assessed snow accumulation trends, highlighting periods of significant accumulation and their correlation with prevailing weather patterns.
-   <img src="path/to/snow_accumulation.png" alt="Snow Accumulation" width="600"/>  <!-- Update with your actual figure path -->
 
-4. **Snow Accumulation Based on Synoptic Weather Patterns:** Utilizing Self-Organizing Maps (SOM), we identified distinct synoptic weather patterns that influence snow accumulation, providing a clearer understanding of how large-scale atmospheric conditions impact local snowfall.
-   <img src="path/to/synoptic_patterns.png" alt="Snow Accumulation Patterns" width="600"/>  <!-- Update with your actual figure path -->
+- Snow accumulation for 2022
+
+<img src="snow_accumulation2022.png" alt="Snow Accumulation" width="600"/>  <!-- Update with your actual figure path -->
+
+- Kernel density estimate plot
+<img src="kde_plot_2022_2.png" alt="Snow Accumulation" width="600"/>
+
+5. **Snow Accumulation Based on Synoptic Weather Patterns:** Utilizing Self-Organizing Maps (SOM), we identified distinct synoptic weather patterns that influence snow accumulation, providing a clearer understanding of how large-scale atmospheric conditions impact local snowfall.
+
+- The sypnotic weather pattern from SOM
+<img src="synoptic_type_ver3.png" alt="Snow Accumulation Patterns" width="600"/>  <!-- Update with your actual figure path -->
+
+- 
 
 ## Methodology
 The analysis was conducted using a combination of lidar and radar datasets collected from various locations in Antarctica. The following steps summarize the general approach:

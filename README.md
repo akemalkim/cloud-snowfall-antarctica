@@ -1,7 +1,7 @@
 # Cloud and Snowfall Study in Antarctica
 
 ## Project Overview
-This project investigates cloud formation and snowfall patterns in Antarctica using advanced lidar and radar data. By leveraging these technologies, we aim to enhance our understanding of atmospheric conditions and precipitation dynamics in this unique and critical region of the Earth.
+This project investigates cloud formation and snowfall patterns in Antarctica using advanced lidar and radar data. By leveraging these technologies, we aim to enhance our understanding of atmospheric conditions and precipitation dynamics in this unique and critical region of the Earth. We also want to see how likely it is that supercooled liquid water clouds will produce heavy snowfall.
 
 ## Results
 Our analysis yielded several key findings:
@@ -37,17 +37,30 @@ Our analysis yielded several key findings:
 5. **Snow Accumulation Based on Synoptic Weather Patterns:** Utilizing Self-Organizing Maps (SOM), we identified distinct synoptic weather patterns that influence snow accumulation, providing a clearer understanding of how large-scale atmospheric conditions impact local snowfall.
 
 - The sypnotic weather pattern from SOM
-<img src="synoptic_type_ver3.png" alt="Snow Accumulation Patterns" width="600"/>  <!-- Update with your actual figure path -->
 
-- 
+<img src="sypnotic_type_ver3.png" alt="Snow Accumulation Patterns" width="600"/>  <!-- Update with your actual figure path -->
+
+- The snow accumulation classification
+<img src="snow_accum_under_synotic_type.png" alt="Snow Accumulation Patterns" width="600"/>
+
+## Methodology
+The analysis was conducted using a combination of lidar and radar datasets collected from Sott Base, Antarctica. The following steps summarize the general approach:
 
 ## Methodology
 The analysis was conducted using a combination of lidar and radar datasets collected from various locations in Antarctica. The following steps summarize the general approach:
 
-1. **Data Collection:** Gathered lidar and radar data from relevant sources, ensuring a robust dataset for analysis.
-2. **Data Processing:** Developed Python scripts to clean, calibrate, and process the data, including filtering noise and interpolating missing values.
-3. **Climatological Analysis:** Performed statistical analyses to derive climatological insights from the processed lidar and radar data.
-4. **Snow Accumulation Analysis:** Analyzed snow accumulation data in relation to synoptic weather patterns identified through Self-Organizing Maps (SOM), facilitating a deeper understanding of precipitation drivers.
+## Methodology
+The analysis was conducted using a combination of lidar and radar datasets collected from various locations in Antarctica. The following steps summarize the general approach:
+
+1. **Data Processing:** 
+   - **Lidar Climatology:** Processed using ALCF Software, which automates the pre-processing of lidar and ceilometer data. For more information, visit [ALCF Software](https://alcf.peterkuma.net/).  <!-- Replace with the actual website link -->
+   - **Radar Climatology:** Utilized the radar equation to calculate radar reflectivity, Doppler velocity, spectral width, and snow rate from the raw spectrum data.
+
+2. **Climatological Analysis:** 
+   - Derived snow accumulation from the calculated snow rate by performing a cumulative sum to identify periods with significant spikes in snow thickness.
+
+3. **Synoptic Weather Pattern Analysis:** 
+   - Trained Self-Organizing Maps (SOM) using 30 years of data to capture synoptic-scale weather patterns. These patterns were then applied to the snow accumulation data to analyze how different weather conditions influence snow accumulation.
 
 ## Installation
 To run the analysis code, ensure you have the following Python packages installed:
